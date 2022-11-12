@@ -1,6 +1,6 @@
 package com.greatlearning.groupgradedassignment.Question2;
 
-//Driver Class
+//Driver Code
 
 public class Main {
 	public static void main(String[] args) {
