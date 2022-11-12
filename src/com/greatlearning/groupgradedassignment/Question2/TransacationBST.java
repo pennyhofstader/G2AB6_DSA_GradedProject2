@@ -18,7 +18,7 @@ class TransacationBST {
 	void UpdatingTransacationBST(Node root) {
 		if (root == null)
 			return;
-		// looping and updating the right of ancestor and also the ancestor
+		// updating the ancestors
 
 		UpdatingTransacationBST(root.left);
 		Node rightNode = root.right;
@@ -45,5 +45,15 @@ class TransacationBST {
 			return;
 		System.out.print(root.data + " ");
 		TransactionTreeTraversal(root.right);
+	}
+
+	// input for BST
+	void inputforBST() {
+		node = new Node(50);
+		node.left = new Node(30);
+		node.right = new Node(60);
+		node.left.left = new Node(10);
+		node.right.left = new Node(55);
+
 	}
 }

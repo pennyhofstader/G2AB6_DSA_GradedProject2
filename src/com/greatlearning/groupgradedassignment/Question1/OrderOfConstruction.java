@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class OrderOfCOnstruction {
+public class OrderOfConstruction {
     public Integer NumOfFloors;
     public Integer[] FloorSize;
 

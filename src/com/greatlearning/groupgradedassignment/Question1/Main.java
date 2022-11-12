@@ -3,9 +3,9 @@ package com.greatlearning.groupgradedassignment.Question1;
 
 public class Main {
 	public static void main(String[] args) {
-		OrderOfCOnstruction order = new OrderOfCOnstruction();
+		OrderOfConstruction Floors = new OrderOfConstruction();
 
-		order.getData();
-		order.calculateAndPrintOrderOfConstruction(order.FloorSize);
+		Floors.getData();
+		Floors.calculateAndPrintOrderOfConstruction(Floors.FloorSize);
     }
 }
