@@ -10,7 +10,7 @@ public class Main {
 		// inserting values in the tree
 		BSTtoSkewed.inputforBST();
 
-		// calling the updating and printing functions
+		// updating and printing functions
 		System.out.print("Output : ");
 		BSTtoSkewed.UpdatingTransacationBST(BSTtoSkewed.node);
 		BSTtoSkewed.TransactionTreeTraversal(BSTtoSkewed.newHead);

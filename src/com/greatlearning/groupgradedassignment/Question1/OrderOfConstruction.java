@@ -34,9 +34,9 @@ public class OrderOfConstruction {
         Integer[] FloorSizeSorted = FloorSize.clone();
         Arrays.sort(FloorSizeSorted, Collections.reverseOrder());
 
-        Stack< Integer > myStack = new Stack < Integer > ();
+        Stack< Integer > Stack = new Stack < Integer > ();
 
-        //Loop over the unsorted data and when you see the entry is matched then pop all Stack elements
+        //Loop over the unsorted data 
         for (int i = 0; i < FloorSize.length; i++) {
             if (FloorSize[i] == FloorSizeSorted[j]) {
                 if (i == FloorSize.length - 1) 
@@ -44,17 +44,17 @@ public class OrderOfConstruction {
                 else 
                 	j = i + 1 ;
 
-                //Print the current floor as well as entire Stack till it's empty and entry is > than next element in sorted list.
+                //Print the current floor as well as entire Stack than next element in sorted list.
                 System.out.println("Day: " + (i + 1));
-                if (myStack != null) {
+                if (Stack != null) {
                     System.out.print(FloorSize[i] + " ");
-                    while (!myStack.isEmpty()) {
-                        int val = myStack.pop();
+                    while (!Stack.isEmpty()) {
+                        int val = Stack.pop();
                         if (val >= FloorSizeSorted[j]) {
                             System.out.print(val + " ");
                         } else {
-                            myStack.push(val);
-                            j -= myStack.size();
+                            Stack.push(val);
+                            j -= Stack.size();
                             break;
                         }
                     }
@@ -68,7 +68,7 @@ public class OrderOfConstruction {
             // Add the element to Stack
             {
                 System.out.println("Day: " + (i + 1));
-                myStack.push(FloorSize[i]);
+                Stack.push(FloorSize[i]);
                 System.out.println();
             }
         }
